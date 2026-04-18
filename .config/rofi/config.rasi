@@ -1,0 +1,6 @@
+@import "/usr/share/rofi/themes/solarized_alternate.rasi"
+@theme "mytheme"
+
+configuration {
+    fixed-num-lines: false;
+}

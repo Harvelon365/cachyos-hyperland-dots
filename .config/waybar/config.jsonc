@@ -1,0 +1,44 @@
+[
+    {
+        "output": "DP-2",
+        "layer": "top",
+        "position": "top",
+        "height": 26,
+        "modules-left": ["custom/pacman"],
+        "modules-center": ["hyprland/workspaces"],
+        "modules-right": ["tray", "clock"],
+        "clock": {
+            "format": "{:%H:%M}",
+            "tooltip": false
+        },
+        "custom/pacman": {
+            "format": "{icon}{0}",
+            "return-type": "json",
+            "format-icons": {
+                "pending-updates": " ",
+                "updated": ""
+            },
+            "exec-if": "which waybar-updates",
+            "exec": "waybar-updates -d"
+        }
+    },
+    {
+        "output": "HDMI-A-1",
+        "layer": "top",
+        "position": "top",
+        "height": 26,
+        "modules-left": ["cpu", "memory"],
+        "modules-center": ["hyprland/workspaces"],
+        "modules-right": ["clock"],
+        "cpu": {
+            "format": "CPU: {usage}%"
+        },
+        "memory": {
+            "format": "MEM: {percentage}%"
+        },
+        "clock": {
+            "format": "{:%a %b %d   %H:%M}",
+            "tooltip": false
+        }
+    }
+]
